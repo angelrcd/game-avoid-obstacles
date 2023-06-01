@@ -7,11 +7,8 @@ const cellState = {
   scoreUp : 2,
 }
 export const gameBoardState = [];
-initBoard();
-refreshDisplay();
-console.log(gameBoardState);
 
-function initBoard(){
+export function initBoard(){
   gameBoardState.length = 0;
   // First two columns are empty
   gameBoardState.push([0,0,0]);

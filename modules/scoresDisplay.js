@@ -1,8 +1,12 @@
 const scoreDisplay = document.querySelector(".score");
-const bestScoreDisplay = document.querySelector(".best-score");
+const highestScoreDisplay = document.querySelector(".best-score");
 const lifesDisplay = document.querySelector(".lifes");
 
-export function updateScoresDisplay(score, obstaclesHit){
+export function updateScoresDisplay(score, lifes){
   scoreDisplay.textContent = score;
-  lifesDisplay.textContent = 5 - obstaclesHit;
+  lifesDisplay.textContent = lifes;
+}
+
+export function setHighestScore(highestScore){
+  highestScoreDisplay.textContent = highestScore;
 }
