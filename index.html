@@ -9,59 +9,65 @@
   </head>
   <body>
     <main>
-      <div id="controller-column">
-        <div class="controller-cell cell" data-position=0></div>
-        <div class="controller-cell cell" aria-selected="true" data-position=1></div>
-        <div class="controller-cell cell" data-position=2></div>
-      </div>
-
-      <div id="game-board">
-        <div class="game-board-column" id="col1">
-          <div class="cell" data-position=0></div>
-          <div class="cell" data-position=1></div>
-          <div class="cell" data-position=2></div>
+      <section id="scores-section">
+        <p>Score: <span class="score"></span></p>
+        <p>Best Score: <span class="best-score"></span></p>
+        <p>Lifes: <span class="lifes"></span></p>
+      </section>
+      <section id="game-section">
+        <div id="controller-column">
+          <div class="controller-cell cell" data-position=0></div>
+          <div class="controller-cell cell" aria-selected="true" data-position=1></div>
+          <div class="controller-cell cell" data-position=2></div>
         </div>
-        <div class="game-board-column" id="col2">
-          <div class="cell" data-position=0></div>
-          <div class="cell" data-position=1></div>
-          <div class="cell" data-position=2></div>
+        <div id="game-board">
+          <div class="game-board-column" id="col1">
+            <div class="cell" data-position=0></div>
+            <div class="cell" data-position=1></div>
+            <div class="cell" data-position=2></div>
+          </div>
+          <div class="game-board-column" id="col2">
+            <div class="cell" data-position=0></div>
+            <div class="cell" data-position=1></div>
+            <div class="cell" data-position=2></div>
+          </div>
+          <div class="game-board-column" id="col3">
+            <div class="cell" data-position=0></div>
+            <div class="cell" data-position=1></div>
+            <div class="cell" data-position=2></div>
+          </div>
+          <div class="game-board-column" id="col4">
+            <div class="cell" data-position=0></div>
+            <div class="cell" data-position=1></div>
+            <div class="cell" data-position=2></div>
+          </div>
+          <div class="game-board-column" id="col5">
+            <div class="cell" data-position=0></div>
+            <div class="cell" data-position=1></div>
+            <div class="cell" data-position=2></div>
+          </div>
+          <div class="game-board-column" id="col6">
+            <div class="cell" data-position=0></div>
+            <div class="cell" data-position=1></div>
+            <div class="cell" data-position=2></div>
+          </div>
+          <div class="game-board-column" id="col7">
+            <div class="cell" data-position=0></div>
+            <div class="cell" data-position=1></div>
+            <div class="cell" data-position=2></div>
+          </div>
+          <div class="game-board-column" id="col8">
+            <div class="cell" data-position=0></div>
+            <div class="cell" data-position=1></div>
+            <div class="cell" data-position=2></div>
+          </div>
+          <div class="game-board-column" id="col9">
+            <div class="cell" data-position=0></div>
+            <div class="cell" data-position=1></div>
+            <div class="cell" data-position=2></div>
+          </div>
         </div>
-        <div class="game-board-column" id="col3">
-          <div class="cell" data-position=0></div>
-          <div class="cell" data-position=1></div>
-          <div class="cell" data-position=2></div>
-        </div>
-        <div class="game-board-column" id="col4">
-          <div class="cell" data-position=0></div>
-          <div class="cell" data-position=1></div>
-          <div class="cell" data-position=2></div>
-        </div>
-        <div class="game-board-column" id="col5">
-          <div class="cell" data-position=0></div>
-          <div class="cell" data-position=1></div>
-          <div class="cell" data-position=2></div>
-        </div>
-        <div class="game-board-column" id="col6">
-          <div class="cell" data-position=0></div>
-          <div class="cell" data-position=1></div>
-          <div class="cell" data-position=2></div>
-        </div>
-        <div class="game-board-column" id="col7">
-          <div class="cell" data-position=0></div>
-          <div class="cell" data-position=1></div>
-          <div class="cell" data-position=2></div>
-        </div>
-        <div class="game-board-column" id="col8">
-          <div class="cell" data-position=0></div>
-          <div class="cell" data-position=1></div>
-          <div class="cell" data-position=2></div>
-        </div>
-        <div class="game-board-column" id="col9">
-          <div class="cell" data-position=0></div>
-          <div class="cell" data-position=1></div>
-          <div class="cell" data-position=2></div>
-        </div>
-      </div>
+      </section>
     </main>
     <script type="module" src="/main.js"></script>
     <script type="module" src="/modules/controller.js"></script>

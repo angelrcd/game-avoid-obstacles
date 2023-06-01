@@ -1,4 +1,5 @@
 import refreshDisplay from "./gameBoardDisplay";
+import { currentPosition } from "./controller";
 
 const cellState = {
   empty : 0,
@@ -39,4 +40,8 @@ export default function shiftGameBoard(){
   const incomingColumn = gameBoardState.shift()
   gameBoardState.push(generateRandomColumn());
   return incomingColumn;
+}
+
+export function getCollision(incomingColumn){
+  return incomingColumn[currentPosition];
 }

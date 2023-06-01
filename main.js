@@ -1,7 +1,22 @@
 import shiftGameBoard from "./modules/gameBoard";
 import refreshDisplay from "./modules/gameBoardDisplay";
+import { getCollision } from "./modules/gameBoard";
+import { updateScoresDisplay } from "./modules/scoresDisplay";
+
+let score = 0;
+let bestScore = 0;
+let obstaclesHit = 0;
 
 let counter = setInterval(()=>{
-  shiftGameBoard();
+  const incomingColumn = shiftGameBoard();
+  const collision = getCollision(incomingColumn)
+
+  if (collision === 1) {
+    obstaclesHit++;
+  } else if (collision === 2){
+    score++;
+  }
+
   refreshDisplay();
-}, 2000);
+  updateScoresDisplay(score, obstaclesHit)
+}, 1000);

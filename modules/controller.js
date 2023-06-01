@@ -3,7 +3,7 @@ const BOTTOM_MOST_POSITION = 2;
 const controllerCells = document.querySelectorAll("#controller-column .controller-cell");
 
 // Initial position
-let currentPosition = 1;
+export let currentPosition = 1;
 
 document.addEventListener("keydown", (e)=> {
   if(e.key === "ArrowUp"){
