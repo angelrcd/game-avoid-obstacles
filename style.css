@@ -46,7 +46,7 @@ main {
 }
 
 .controller-cell[aria-selected=true]{
-  background: lightcoral;
+  background: lightskyblue;
 }
 
 
@@ -59,6 +59,15 @@ main {
 #game-board {
   display: flex;
 }
+
+.cell[data-state="obstacle"]{
+  background: lightcoral;
+}
+
+.cell[data-state="scoreup"]{
+  background: lightgreen;
+}
+
 
 
 

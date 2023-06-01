@@ -5,6 +5,18 @@ const controllerCells = document.querySelectorAll("#controller-column .controlle
 // Initial position
 let currentPosition = 1;
 
+document.addEventListener("keydown", (e)=> {
+  if(e.key === "ArrowUp"){
+    moveUp();
+    clearSelectedControllerPosition();
+    selectCurrentPosition();
+  } else if (e.key === "ArrowDown"){
+    moveDown();
+    clearSelectedControllerPosition();
+    selectCurrentPosition();
+  }
+})
+
 function moveUp(){
   if (currentPosition === TOP_MOST_POSITION){
     return;
@@ -30,15 +42,3 @@ function clearSelectedControllerPosition(){
 function selectCurrentPosition(){
   controllerCells[currentPosition].setAttribute("aria-selected", true);
 }
-
-document.addEventListener("keydown", (e)=> {
-  if(e.key === "ArrowUp"){
-    moveUp();
-    clearSelectedControllerPosition();
-    selectCurrentPosition();
-  } else if (e.key === "ArrowDown"){
-    moveDown();
-    clearSelectedControllerPosition();
-    selectCurrentPosition();
-  }
-})
