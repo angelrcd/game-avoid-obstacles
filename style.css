@@ -45,6 +45,10 @@ main {
   background: lightgray;
 }
 
+.controller-cell[aria-selected=true]{
+  background: lightcoral;
+}
+
 
 #controller-column,
 .game-board-column {
